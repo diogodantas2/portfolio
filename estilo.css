@@ -1,0 +1,60 @@
+body{
+    background-image: url(imagens/estrela.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+        width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Segoe UI", "Arial", sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: white;
+}
+
+p,h2 {
+    text-shadow: 1px 1px 4px black;
+
+}
+
+
+.perfil {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.img-perfil {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid gold;
+}
+
+.img-perfil:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        box-shadow: 0 0 10px gold;
+
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid gold;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: gold;
+    text-shadow: 1px 1px 3px black;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.btn-voltar:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    background: gold;
+    color: black;
+}
