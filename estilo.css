@@ -1,9 +1,9 @@
-body{
+body {
     background-image: url(imagens/estrela.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-        width: 940px;
+    width: 940px;
     margin-left: auto;
     margin-right: auto;
     font-family: "Segoe UI", "Arial", sans-serif;
@@ -12,10 +12,84 @@ body{
     color: white;
 }
 
-p,h2 {
+p {
+
+    margin-bottom: 1em;
+
+}
+.cavaleiros-titulo{
+
+color: #f3d215;
+text-align: center;
+
+
+}
+
+
+h2 {
     text-shadow: 1px 1px 4px black;
 
 }
+
+
+.bronze-titulo {
+  color: #E25822; /* Laranja-fogo */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(226, 88, 34, 0.6);
+  margin-top: 30px;
+}
+
+.prata-titulo {
+  color: #C0C0C0; /* Prata metálico */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(192, 192, 192, 0.6);
+  margin-top: 30px;
+}
+
+.gold-titulo {
+  color: #D4AF37; /* ouro metálico */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 6px rgba(192, 192, 192, 0.6);
+  margin-top: 30px;
+}
+
+.gold-paragrafo {
+
+  color: #D4AF37; /* ouro metálico */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px;
+
+}
+
+.silver-paragrafo {
+
+  color: #C0C0C0; /* Prata metálico */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px    
+}
+
+.bronze-paragrafo {
+
+color: #E25822; /* Laranja-fogo */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px
+
+}
+
+
+
 
 
 .perfil {
@@ -34,9 +108,9 @@ p,h2 {
 }
 
 .img-perfil:hover {
-        transform: scale(1.1);
-        transition: 0.2s;
-        box-shadow: 0 0 10px gold;
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 0 0 10px gold;
 
 }
 
@@ -57,4 +131,50 @@ p,h2 {
     transition: 0.2s;
     background: gold;
     color: black;
+}
+
+
+
+a href {
+
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+/* ===== MENU SUPERIOR ===== */
+.menu-topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #001F3F; /* azul escuro, cor do céu noturno de Saint Seiya */
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* ===== LINKS DO MENU ===== */
+.menu-topo a {
+  text-decoration: none;
+  color: #FFD700; /* dourado - símbolo de Athena e das armaduras */
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.menu-topo a:hover {
+  background-color: #FFD700; /* dourado no hover */
+  color: #001F3F; /* inverte as cores ao passar o mouse */
+  transform: scale(1.05);
+}
+
+/* ===== AJUSTE DO CONTEÚDO ===== */
+body {
+  margin-top: 80px; /* evita que o conteúdo fique escondido atrás do menu fixo */
 }
