@@ -119,6 +119,43 @@
   <p>© 2025 Os Santos de Athena - Projeto de estudo por Diogo Dantas</p>
 </footer>
 
+<div>
+<!-- Contador de visitas (CountAPI) -->
+<p id="contador">
+  👀 Visitas ao site: <span id="visitas-countapi">carregando...</span>
+</p>
+
+<style>
+  #contador {
+    margin-top: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    background: #f0f0f0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+  }
+</style>
+
+<script>
+  // contador global usando CountAPI
+  const namespace = 'diogodantas2';
+  const key = 'portfolio';
+  const url = `https://api.countapi.xyz/hit/${namespace}/${key}`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitas-countapi').textContent = data.value;
+    })
+    .catch(error => {
+      console.error('Erro no contador:', error);
+      document.getElementById('visitas-countapi').textContent = 'erro';
+    });
+</script>
+
+    
+</div>
 
 </body>
 
